@@ -13,7 +13,7 @@ public class EmployeeController {
         return employeeRepository.saveEmployee(employee);
     }
 
-    @PostMapping("/employee/{id}")
+    @GetMapping("/employee/{id}")
     public Employee getEmployee(@PathVariable("id") String employeeId) {
         return employeeRepository.getEmployeeById(employeeId);
     }
